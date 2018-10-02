@@ -8,7 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController
+{
+    @IBOutlet weak var faceView: FaceView!
+    
+    var expression = FacialExpression(eyes: .open, mouth: .grin)
+    
+    private func updateUI(){
+        switch expression.eyes{
+        case.open:
+            faceView.eyesOpen = true
+        case.closed:
+            faceView.eyesOpen = false
+        case .squinting:
+            faceView.eyesOpen = false
+        }
+        faceView.mouthCruvature = mouthCurvatures[expression.mouth] ?? 0.0
+    }
+    
+    private let mouthCurvatures = [FacialExpression.Mouth.grin:0.5, .frown: -1.0, .smile: 1.0, neutraul:0.0,.smirk:-0.5]
+    
 }
+
 
