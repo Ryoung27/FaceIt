@@ -7,21 +7,30 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController
 {
-    @IBOutlet weak var faceView: FaceView!
+    @IBOutlet weak var faceView: FaceView!{
+        didSet {
+            updateUI()
+        }
+    }
     
-    var expression = FacialExpression(eyes: .open, mouth: .grin)
+    var expression = FacialExpression(eyes: .open, mouth: .grin){
+        didSet {
+            updateUI()
+        }
+    }
     
     private func updateUI(){
         switch expression.eyes{
         case.open:
-            faceView.eyesOpen = true
+            faceView?.eyesOpen = true
         case.closed:
-            faceView.eyesOpen = false
+            faceView?.eyesOpen = false
         case .squinting:
-            faceView.eyesOpen = false
+            faceView?.eyesOpen = false
         }
         faceView.mouthCruvature = mouthCurvatures[expression.mouth] ?? 0.0
     }

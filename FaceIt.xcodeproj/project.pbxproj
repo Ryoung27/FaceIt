@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025A57182163ED85001A9581 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A57172163ED85001A9581 /* FacialExpression.swift */; };
 		02AC455121638B0D00E8537C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC455021638B0D00E8537C /* AppDelegate.swift */; };
 		02AC455321638B0D00E8537C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC455221638B0D00E8537C /* ViewController.swift */; };
 		02AC455621638B0D00E8537C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02AC455421638B0D00E8537C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		025A57172163ED85001A9581 /* FacialExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		02AC454D21638B0C00E8537C /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02AC455021638B0D00E8537C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02AC455221638B0D00E8537C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				02AC455221638B0D00E8537C /* ViewController.swift */,
 				02AC456321638C3700E8537C /* FaceView.swift */,
 				02AC455421638B0D00E8537C /* Main.storyboard */,
+				025A57172163ED85001A9581 /* FacialExpression.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02AC455321638B0D00E8537C /* ViewController.swift in Sources */,
+				025A57182163ED85001A9581 /* FacialExpression.swift in Sources */,
 				02AC455121638B0D00E8537C /* AppDelegate.swift in Sources */,
 				02AC456421638C3700E8537C /* FaceView.swift in Sources */,
 			);
