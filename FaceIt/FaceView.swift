@@ -9,6 +9,9 @@
 import UIKit
 @IBDesignable
 class FaceView: UIView {
+    didSet {
+    let handler = #selector(FaceView.changeScale(byRea))
+    }
 
     @IBInspectable
     var color: UIColor = UIColor.blue
