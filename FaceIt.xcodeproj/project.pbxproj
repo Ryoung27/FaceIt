@@ -56,23 +56,15 @@
 		02AC454F21638B0C00E8537C /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				02AC455C21638B0E00E8537C /* Info.plist */,
+				02AC455921638B0E00E8537C /* LaunchScreen.storyboard */,
+				02AC455721638B0E00E8537C /* Assets.xcassets */,
+				02AC455021638B0D00E8537C /* AppDelegate.swift */,
 				02AC455221638B0D00E8537C /* ViewController.swift */,
 				02AC456321638C3700E8537C /* FaceView.swift */,
 				02AC455421638B0D00E8537C /* Main.storyboard */,
-				02AC456221638BBA00E8537C /* Supporting Files */,
 			);
 			path = FaceIt;
-			sourceTree = "<group>";
-		};
-		02AC456221638BBA00E8537C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				02AC455021638B0D00E8537C /* AppDelegate.swift */,
-				02AC455721638B0E00E8537C /* Assets.xcassets */,
-				02AC455921638B0E00E8537C /* LaunchScreen.storyboard */,
-				02AC455C21638B0E00E8537C /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
