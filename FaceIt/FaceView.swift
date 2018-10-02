@@ -93,6 +93,16 @@ class FaceView: UIView {
         
 
     }
+    
+    func changeScale(byReactingTo pinchRecognizer: UIPinchGestureRecognizer)
+    {
+        switch pinchRecognizer.state{
+        case .changed,.ended:
+            scale *= pinchRecognizer.scale
+            pinchRecognizer.scale = 1
+        }
+        
+    }
 
     override func draw(_ rect: CGRect) {
         color.set()
